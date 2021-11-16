@@ -5,3 +5,7 @@ print(str1.center(20,'*'))
 print(str1.ljust(20,'#'))
 # 字符串右对齐
 print(str1.rjust(20,'!'))
+
+
+# 赋值运算
+# a+=b  即 a= a+b
