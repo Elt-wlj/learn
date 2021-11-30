@@ -1,5 +1,5 @@
-# 1、包含xls和xlsx两种文件格式，读的方式一样，只是文件的后缀名不一致
-# 2、pip install xlrd  //// 或者是  pip install pyexcel-xls 要下载xlrd模块，
+# 1、包含xls和xlsx两种文件格式，读的方式一样，只是文件的后缀名不一致,
+# 2、pip install xlrd  //// ，必须要安装1.2.0的版本才看可以显示数据，其他版本的是不可以的pip install xlrd==1.2.0
 # 3、引入import xlrd
 import xlrd
 
@@ -11,7 +11,7 @@ def read_xls(path,index):
     sh =ex.sheets()[index] #获取从index的行对象
     return sh
 
-table = read_xls(r'aa.xls',0)
+table = read_xls(r'aa.xls',0) # 这个1代表是sheet1还是sheet2表格
 
 for i in range(0,table.nrows): # tanle_nrows代表的是总行数
     rows = table.row_values(i) #获的一行数据，以列表形式
