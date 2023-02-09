@@ -1,0 +1,3 @@
+- 当pycharm中显示下载驱动失败时，可以自行下载驱动，最后导入即可。如是，mysql的连接失败，则主要查看sqlLite也是否需要进行 驱动的导入
+- sqlLite下的驱动：https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/
+- mysqL下的驱动：https://dev.mysql.com/downloads/connector/j/
